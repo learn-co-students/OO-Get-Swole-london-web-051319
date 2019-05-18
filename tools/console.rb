@@ -4,6 +4,11 @@ require_relative '../config/environment.rb'
 
 # test code goes here
 
+coolgym = Gym.new("coolgym")
+joe = Lifter.new("Joe", 25)
+joe.sign_up(coolgym, 50)
+Membership.new("gym","joe", 50)
+
 binding.pry
 
 puts "Gains!"

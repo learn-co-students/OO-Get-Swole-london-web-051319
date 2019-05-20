@@ -27,7 +27,6 @@ def self.averageLift
   Lifter.all.collect {|lifter| lifter.lift_total}.inject{|sum,n| sum += n}/Lifter.all.count
 end
 
-
   def self.all
     @@all
   end
